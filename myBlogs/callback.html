@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <title>Blogs | Anurag</title>
+  </head>
+
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">Anurag Sharma</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-heading">Callback Functions in JavaScript</h1>
+    </header>
+
+    <article class="container-center showcase-blog">
+      <h2>What is a callback function</h2>
+      <p>
+        A callback function is a function passed into another function as an
+        argument, which is then invoked inside the outer function to complete
+        some kind of routine or action.
+      </p>
+      <p>
+        Lets break this down and find out what is it with a simple example
+        below:
+      </p>
+      <pre>
+        function callback(name) {
+            console.log("Hello",name)
+          }
+          
+          function outer(callback) {
+            const name = prompt('Please Type your name');
+            callback(name);
+          }
+          
+          outer(callback);
+      </pre>
+      <h4>Still not clear with it? lets take another example</h4>
+      <pre>
+        const callback = function() {  
+            console.log("This message is shown after 3 seconds");
+        }
+         
+        setTimeout(callback, 3000);
+      </pre>
+      <p>
+        Here setTimeout function is calling the callback function after 3000
+        miliseconds.This is a simple example of callback.So basically function
+        that is passed to another function as a parameter is a callback function
+      </p>
+      <h2>But Why use callback?</h2>
+    </article>
+
+    <footer class="footer">
+      <div class="footer-header">social media presence</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/ianuragsharma"> github </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/ianuragsharma"> twitter </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://linkedin.com/in/ianuragsharma">
+            linkedin
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
