@@ -164,11 +164,14 @@ hr {
 
 /** projects **/
 .showcase-list {
-  padding: 2rem;
+  padding: 1rem;
 }
 .secondaryColorBackground {
   background-color: var(--off-white);
-  padding: 2rem;
+  padding: 1rem;
+}
+.noColorBackground {
+  padding: 1rem;
 }
 
 /** blogs **/
