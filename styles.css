@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 :root {
   --primary-color: #3b82f6;
@@ -59,8 +57,6 @@ hr {
   margin: 1rem 1rem 1rem 0rem;
 }
 
-/** look into BEM naming convention for CSS **/
-
 /** lists **/
 
 .list-non-bullet {
@@ -81,7 +77,10 @@ hr {
   padding: 1rem;
   border-bottom-left-radius: 1rem;
 }
-
+.nav-brand a {
+  text-decoration: none;
+  color: white;
+}
 .navigation .nav-brand {
   font-size: larger;
   font-weight: bold;
@@ -176,10 +175,15 @@ hr {
 
 /** blogs **/
 .showcase-blog {
-  max-width: 50vw;
+  min-width: 50vw;
   font-size: large;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   /* font-family: "Roboto", sans-serif; */
   padding-bottom: 6rem;
+}
+pre {
+  width: 50vw;
+  text-align: left;
+  max-width: 499px;
 }
