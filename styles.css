@@ -139,9 +139,9 @@ hr {
 /** footers **/
 
 .footer {
-  height: 20vh;
+  height: 15vh;
   background-color: var(--primary-color);
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   color: white;
   border-top-right-radius: 1rem;
@@ -152,7 +152,7 @@ hr {
 }
 
 .footer .footer-header {
-  margin: 3rem;
+  margin: 2rem;
   font-weight: bold;
   font-size: large;
 }
