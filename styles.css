@@ -183,7 +183,7 @@ hr {
   padding-bottom: 6rem;
 }
 pre {
-  width: 50vw;
+  background-color: var(--off-white);
+  padding: 0.5rem;
   text-align: left;
-  max-width: 499px;
 }

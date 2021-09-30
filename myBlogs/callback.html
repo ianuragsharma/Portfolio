@@ -9,7 +9,7 @@
 
   <body>
     <nav class="navigation container">
-      <div class="nav-brand">Anurag Sharma</div>
+      <div class="nav-brand"><a href="/index.html">Anurag Sharma</a></div>
       <ul class="list-non-bullet nav-pills">
         <li class="list-item-inline">
           <a class="link" href="/">Home</a>
@@ -38,25 +38,23 @@
         Lets break this down and find out what is it with a simple example
         below:
       </p>
+
       <pre>
-        function callback(name) {
-            console.log("Hello",name)
-          }
-          
-          function outer(callback) {
-            const name = prompt('Please Type your name');
-            callback(name);
-          }
-          
-          outer(callback);
+  function callback(name) {
+    console.log("Hello",name)
+  }      
+  function outer(callback) {
+    const name = prompt('Type your name');
+    callback(name);
+    }
+    outer(callback);
       </pre>
       <h4>Still not clear with it? lets take another example</h4>
       <pre>
-        const callback = function() {  
-            console.log("This message is shown after 3 seconds");
-        }
-         
-        setTimeout(callback, 3000);
+  const callback = function() {
+    console.log("This message is shown after 3 seconds");
+    }
+  setTimeout(callback, 3000);
       </pre>
       <p>
         Here setTimeout function is calling the callback function after 3000
@@ -64,25 +62,64 @@
         that is passed to another function as a parameter is a callback function
       </p>
       <h2>But Why use callback?</h2>
+      <p>
+        Simple! Callbacks helps in running the JavaScript
+        asynchronously.Callbacks make sure that a function is not going to run
+        before a task is completed but will run right after the task has
+        completed.As we know javascript is a single threaded language
+        synchronous language Callback function opens up a whole new world to
+        explore
+      </p>
+      <p>Lets see an example.</p>
       <pre>
-        document.getElementById("myBtn").addEventListener("click", function() {
-          document.getElementById("demo").innerHTML = "Hello World";
-        });
+  < button id="btn">Click here< /button>
       </pre>
+      <pre>
+  document.queryselector("#btn")
+    .addEventListener("click", function() {    
+      console.log("Button Clicked");
+});
+</pre
+      >
+      <p>In the first code snipped we create a button with the id btn</p>
+      <p>
+        In the second code snipped we select that button and with the help of
+        that id and add an event listner to it.The addEventListener essentially
+        takes two parameters first "click" event and the second parameter is
+        nothing but a callback function.
+      </p>
+      <h2>But what the hell is a callback hell?</h2>
+      <img
+        src="https://camo.githubusercontent.com/63325915eb384512f708b1e1e646303d33206067e6a20d5b6179e6e8165d5ed0/68747470733a2f2f692e696d6775722e636f6d2f364845774766662e676966"
+        alt="callback hell gif"
+      />
+      <br />
+      <small
+        >Source
+        <a href="https://github.com/eladkarako/AsynCallJS"
+          >https://github.com/eladkarako/AsynCallJS</a
+        ></small
+      >
+      <p>Thats a story for another blog till then take care!!</p>
     </article>
 
     <footer class="footer">
-      <div class="footer-header">social media presence</div>
+      <div class="footer-header">
+        Get in touch with me:
+        <a class="link" href="mailto:anuragsharma0711@gmail.com"
+          >anuragsharma0711</a
+        >
+      </div>
       <ul class="social-links list-non-bullet">
         <li class="list-item-inline">
-          <a class="link" href="https://github.com/ianuragsharma"> github </a>
+          <a class="link" href="https://github.com/ianuragsharma"> GitHub </a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="https://twitter.com/ianuragsharma"> twitter </a>
+          <a class="link" href="https://twitter.com/ianuragsharma"> Twitter </a>
         </li>
         <li class="list-item-inline">
           <a class="link" href="https://linkedin.com/in/ianuragsharma">
-            linkedin
+            Linkedin
           </a>
         </li>
       </ul>
